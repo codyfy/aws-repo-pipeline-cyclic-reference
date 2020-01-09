@@ -1,0 +1,48 @@
+{
+  "version": "1.16.0",
+  "artifacts": {
+    "Tree": {
+      "type": "cdk:tree",
+      "properties": {
+        "file": "tree.json"
+      }
+    },
+    "cdk-repopipe": {
+      "type": "aws:cloudformation:stack",
+      "environment": "aws://unknown-account/unknown-region",
+      "properties": {
+        "templateFile": "cdk-repopipe.template.json"
+      },
+      "metadata": {
+        "/cdk-repopipe/my-repo/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "myrepo5DFA62E5",
+            "trace": [
+              "new Repository (/tmp/jsii-kernel-egmyEp/node_modules/@aws-cdk/aws-codecommit/lib/repository.js:111:27)",
+              "/home/hornung/dev/tests/cdk/cdk-repopipe/.env/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7762:49",
+              "Kernel._wrapSandboxCode (/home/hornung/dev/tests/cdk/cdk-repopipe/.env/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:8222:20)",
+              "Kernel._create (/home/hornung/dev/tests/cdk/cdk-repopipe/.env/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7762:26)",
+              "Kernel.create (/home/hornung/dev/tests/cdk/cdk-repopipe/.env/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7509:21)",
+              "KernelHost.processRequest (/home/hornung/dev/tests/cdk/cdk-repopipe/.env/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7296:28)",
+              "KernelHost.run (/home/hornung/dev/tests/cdk/cdk-repopipe/.env/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7236:14)",
+              "Immediate._onImmediate (/home/hornung/dev/tests/cdk/cdk-repopipe/.env/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7239:37)",
+              "processImmediate (internal/timers.js:439:21)"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "runtime": {
+    "libraries": {
+      "@aws-cdk/cx-api": "1.20.0",
+      "@aws-cdk/core": "1.20.0",
+      "@aws-cdk/region-info": "1.20.0",
+      "@aws-cdk/aws-iam": "1.20.0",
+      "@aws-cdk/aws-events": "1.20.0",
+      "@aws-cdk/aws-codecommit": "1.20.0",
+      "jsii-runtime": "Python/3.6.9"
+    }
+  }
+}

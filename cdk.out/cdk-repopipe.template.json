@@ -1,0 +1,13 @@
+{
+  "Resources": {
+    "myrepo5DFA62E5": {
+      "Type": "AWS::CodeCommit::Repository",
+      "Properties": {
+        "RepositoryName": "test-repo"
+      },
+      "Metadata": {
+        "aws:cdk:path": "cdk-repopipe/my-repo/Resource"
+      }
+    }
+  }
+}

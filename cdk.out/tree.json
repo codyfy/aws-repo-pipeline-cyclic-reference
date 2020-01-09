@@ -1,0 +1,35 @@
+{
+  "version": "tree-0.1",
+  "tree": {
+    "id": "App",
+    "path": "",
+    "children": {
+      "Tree": {
+        "id": "Tree",
+        "path": "Tree"
+      },
+      "cdk-repopipe": {
+        "id": "cdk-repopipe",
+        "path": "cdk-repopipe",
+        "children": {
+          "my-repo": {
+            "id": "my-repo",
+            "path": "cdk-repopipe/my-repo",
+            "children": {
+              "Resource": {
+                "id": "Resource",
+                "path": "cdk-repopipe/my-repo/Resource",
+                "attributes": {
+                  "aws:cdk:cloudformation:type": "AWS::CodeCommit::Repository",
+                  "aws:cdk:cloudformation:props": {
+                    "repositoryName": "test-repo"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

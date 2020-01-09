@@ -2,10 +2,12 @@
 
 from aws_cdk import core
 
-from cdk_repopipe.cdk_repopipe_stack import CdkRepopipeStack
+from cdk_repopipe.cdk_repo_stack import RepoStack
+from cdk_repopipe.cdk_pipe_stack import PipelineStack
 
 
 app = core.App()
-CdkRepopipeStack(app, "cdk-repopipe")
+repo_stack = RepoStack(app, "cdk-repo")
+pipe_stack = PipelineStack(app, "cdk-pipe", repo_stack.repo)
 
 app.synth()
